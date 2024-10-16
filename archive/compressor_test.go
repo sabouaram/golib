@@ -87,5 +87,6 @@ func streamToByte(stream io.Reader) []byte {
 	if _, err = buf.ReadFrom(stream); err != nil {
 		return nil
 	}
+
 	return buf.Bytes()
 }
